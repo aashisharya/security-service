@@ -46,7 +46,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 			.and()
 	        .formLogin()
 				.loginPage("/login")  //Loginform all can access .. 
-				.defaultSuccessUrl("/otp",true)
+				.defaultSuccessUrl("/dashboard",true)
 				.failureUrl("/login?error=true")
 				.permitAll()
 				.and()
